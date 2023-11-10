@@ -55,7 +55,7 @@ router.get('/:id', async (req, res) => {
 }
 });
 
-// create new product
+// create new product - Post route 
 router.post('/', async (req, res) => {
   /* req.body should look like this...
     {
@@ -128,7 +128,7 @@ router.put('/:id', async (req, res) => {
       return res.json(product);
     })
     .catch((err) => {
-      // console.log(err);
+      
       res.status(400).json(err);
     });
 });

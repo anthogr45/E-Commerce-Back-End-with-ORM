@@ -4,6 +4,8 @@ const sequelize = require('../config/connection.js');
 
 class Tag extends Model {}
 
+// Table fields for Category
+
 Tag.init(
   {
     id: {
@@ -16,7 +18,6 @@ Tag.init(
       type: DataTypes.STRING,
     },
     
-    // define columns
   },
   {
     sequelize,
